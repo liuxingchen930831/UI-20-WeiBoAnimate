@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WelComeView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="kfW-OX-UFR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compose_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="vN2-uB-I75">
+                    <rect key="frame" x="130" y="100" width="154" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="154" id="5jT-or-xgR"/>
+                        <constraint firstAttribute="height" constant="48" id="KOA-1F-3jc"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doubi" translatesAutoresizingMaskIntoConstraints="NO" id="Q5z-MF-Zf6">
+                    <rect key="frame" x="157" y="100" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="c6R-Gf-2lA"/>
+                        <constraint firstAttribute="width" constant="100" id="qX5-Di-mdh"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G94-cC-Xdg">
+                    <rect key="frame" x="170" y="215" width="74" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="Wr0-lW-YIB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kfW-OX-UFR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HBg-jT-z5Y"/>
+                <constraint firstItem="Q5z-MF-Zf6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="IRs-G1-zqZ"/>
+                <constraint firstItem="vN2-uB-I75" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Rrj-vx-vFz"/>
+                <constraint firstAttribute="trailing" secondItem="kfW-OX-UFR" secondAttribute="trailing" id="Yrw-Ql-Z5a"/>
+                <constraint firstItem="Q5z-MF-Zf6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aNa-g0-FkO"/>
+                <constraint firstItem="kfW-OX-UFR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d23-W2-PxT"/>
+                <constraint firstItem="G94-cC-Xdg" firstAttribute="top" secondItem="Q5z-MF-Zf6" secondAttribute="bottom" constant="15" id="fIg-B4-ikc"/>
+                <constraint firstItem="G94-cC-Xdg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kMx-a8-TJj"/>
+                <constraint firstItem="vN2-uB-I75" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="lKw-f0-O1R"/>
+                <constraint firstAttribute="bottom" secondItem="kfW-OX-UFR" secondAttribute="bottom" id="tga-fS-GwF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <connections>
+                <outlet property="iconView" destination="Q5z-MF-Zf6" id="ETn-We-a2f"/>
+                <outlet property="loginView" destination="vN2-uB-I75" id="gzN-IK-nHt"/>
+                <outlet property="textLabel" destination="G94-cC-Xdg" id="Hs7-HJ-TXj"/>
+            </connections>
+            <point key="canvasLocation" x="133.5" y="546.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="320" height="480"/>
+        <image name="compose_slogan" width="154" height="48"/>
+        <image name="doubi" width="200" height="200"/>
+    </resources>
+</document>
